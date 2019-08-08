@@ -1,0 +1,21 @@
+{% extends 'card/base_card.html' %}
+
+{% block title %}
+{{ card.title }} - {{ block.super }}
+{% endblock %}
+
+{% block usercard %}
+
+<a href="https://github.com/elsebreak">
+  <img src="https://avatars1.githubusercontent.com/u/53481197?s=460&v=4" alt="else:break" width="200" height="200">
+</a>
+
+<h1 class="mt-5 mb-5">
+  {{ card.title }}
+</h1>
+
+<p>
+  {{ card.body}}
+</p>
+
+{% endblock %}

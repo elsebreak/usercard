@@ -1,0 +1,23 @@
+{% extends 'card/base_card.html' %}
+
+
+
+{% block title %}
+Library
+{% endblock %}
+
+{% block usercard %}
+<section class="a">
+  <div class="container-fluid">
+    <div class="row">
+
+      {% for card in cards %}
+
+        {% include 'card/includes/card_template.html' %}
+
+      {% endfor %}
+
+      </div>
+    </div>
+
+    {% endblock %}

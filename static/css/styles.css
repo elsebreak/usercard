@@ -1,0 +1,87 @@
+.btn-outline-dark{
+  border-radius: 0px;
+}
+
+.btn-secondary{
+  border-radius: 0px;
+}
+
+.form-control{
+  border-radius: 0px;
+  border-color: #808080;
+}
+
+
+.nav {
+  transition: 1s;
+  opacity: 0.3;
+  background-color: #808080;
+
+
+}
+
+
+.nav:hover{
+  transition: 1s;
+  opacity: 1;
+}
+
+.btn-group{
+
+  transition: 1s;
+  opacity: 0.8;
+}
+
+.btn-group:hover{
+  transition: 1s;
+  opacity: 1;
+}
+
+.site-header{
+  background-color: #808080;
+}
+
+.card {
+  border-color: #ffffff;
+  border-radius: 0px;
+  transition: 1s;
+  opacity: 0.8;
+  background-color: #808080;
+}
+
+.card:hover{
+  transition: 1s;
+  opacity: 1;
+}
+
+.card-header {
+  transition: 1s;
+  opacity: 0.3;
+}
+
+.card-header:hover{
+  transition: 1s;
+  opacity: 1;
+  background-color: #7f7679;
+}
+
+.card-body {
+  transition: 1s;
+  background-color: #808080;
+}
+
+.card-body:hover {
+  transition: 1s;
+  background-color: #7f7679;
+}
+
+.card-footer {
+  transition: 1s;
+  opacity: 0.5;
+  background-color: #808080;
+}
+
+.card-footer:hover {
+  opacity: 1;
+  background-color: #7f7679;
+}

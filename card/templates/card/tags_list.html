@@ -1,0 +1,20 @@
+{% extends 'card/base_card.html' %}
+
+{% block title %}
+  Tags list - {{ block.super }}
+{% endblock %}
+
+{% block usercard %}
+
+
+<a href="https://github.com/elsebreak">
+  <img src="https://avatars1.githubusercontent.com/u/53481197?s=460&v=4" alt="else:break" width="200" height="200">
+</a>
+
+
+  <h1 class="mb-5 mt-5">Tags</h1>
+    {% for tag in tags %}
+        <h3><a href="{{ tag.get_absolute_url }}" style="color: black" >#{{ tag.title }}</h3>
+    {% endfor %}
+
+{% endblock %}

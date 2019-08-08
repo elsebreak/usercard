@@ -1,0 +1,22 @@
+{% extends 'card/base_card.html' %}
+
+{% block title %}
+  {{ tag.title }} - {{ block.super }}
+{% endblock %}
+
+{% block usercard %}
+<h1 class="mb-5 mt-5">Card with "{{ tag.title|title }}" tag</h1>
+<section class="a">
+  <div class="container-fluid">
+    <div class="row">
+
+      {% for card in tag.cards.all %}
+
+          {% include 'card/includes/card_template.html' %}
+
+        {% endfor %}
+
+      </div>
+    </div>
+
+    {% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'card/base_card.html' %}
+
+{% block title %}
+  Delete Tag "{{ tag.title|title }}" - {{ block.super }}
+{% endblock %}
+
+{% block usercard %}
+<div class="container mt-5 offset-3" style="width: 21rem;">
+
+    <form  action="{{ tag.get_delete_url }}" method="post">
+      {% csrf_token %}
+      <div class="form-group">
+        <div class="mt-2 ml-2 mr-2 alert alert-danger" role="alert">
+          <h3> Delete <b>"{{ tag.title|title }}"</b> tag?  </h3>
+        </div>
+
+        <button type="submit" name="button" class="ml-2 btn btn-danger">Delete</button>
+        <a href="{{ tag.get_absolute_url }}" class="    btn btn-danger" >Cancel</a>
+
+
+    </form>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
